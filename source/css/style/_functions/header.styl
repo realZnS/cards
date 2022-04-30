@@ -41,7 +41,8 @@
                 border-radius 5px
 
                 &:hover
-                    background-color var(--bg-menu)
+                    // background-color var(--bg-menu)
+                    // diff here
 
         #btn-search
         #btn-toggle-dark
@@ -110,6 +111,13 @@ if (hexo-config('navbar.sticky'))
         .header
             position sticky
             backdrop-filter blur(20px)
+            // TODO: fix this
+            -webkit-backdrop-filter blur(20px)
+
+            // diff here
+            transition: background-color 0.6s
+            background-color var(--bg-header-color)
+            box-shadow 0 0.3125rem 0.3125rem -0.3125rem rgba(0,0,0,0.12)
 
 @media screen and (max-width: 764px)
     .navbar__menus

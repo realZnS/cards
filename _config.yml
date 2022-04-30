@@ -13,8 +13,8 @@
 head: 
   
   # 网站图标
-  favicon:
-    ico: 
+  favicon: 
+    ico: /favicon.png
     small: 
     medium: 
     apple_touch_icon: 
@@ -33,7 +33,7 @@ head:
 
   # 自定义 head
   custom_head: 
-    # - ''
+    # - '<script data-ad-client="ca-pub-8710166183324737" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'
     # - ''
 
 
@@ -46,36 +46,36 @@ head:
 navbar: 
 
   # 左侧名称显示
-  sitename: Demo
+  sitename: ZnS' Blog
   
   # 右侧站内导航链接
   menu: 
-    - name: 首页
+    - name: Home
       url: /
-    - name: 标签
+    - name: Tags
       url: /tags/
-    - name: 归档
+    - name: Archives
       url: /archives/
-    - name: 友链
-      url: /friends/
-    - name: Page
-      url: /page/
+    - name: Links
+      url: /links/
+    - name: About
+      url: /about/
 
   # 导航栏永远显示在屏幕顶端
   # 仅当屏幕宽度不小于 1080 px 时生效
-  sticky: false
+  sticky: true
 
 # 封面 cover 设置
 cover: 
 
   # 显示在最上方 cover 处的站点名称
-  sitename: Demo
+  sitename: ZnS' Blog
 
   # 若 avatar 配置不为空，则优先使用 avatar 覆盖 sitename
   avatar: 
   
   # sitename/avatar 下方的一句话介绍
-  description: Hi, nice to meet you!
+  description: 硫化锌是一种不溶于水、易溶于酸的白色或淡黄色粉末
 
 
 
@@ -87,12 +87,14 @@ style:
 
   # 颜色配置
   color: 
-    main_color: '#6200ee'
-    main_color_dark: '#bb86fc'
+    main_color: '#ffb90f'
+    main_color_dark: '#ffb90f'
+    # main_color: '#6200ee'  # '#ffb90f'
+    # main_color_dark: '#bb86fc'
 
   # 弧度设置
   radius: 
-    main_radius: 5px
+    main_radius: 3px
     
   # 间距设置
   space: 
@@ -103,28 +105,28 @@ style:
   highlight: 
 
     # 默认代码高亮主题
-    default: 
+    default: 'atom-one-dark'
 
     # 暗色代码高亮主题
-    darkmode: 
+    darkmode: 'atom-one-dark'
 
   # highlight.js 代码高亮
   hljs: 
 
     # 默认代码高亮主题
-    default: 
+    default: 'atom-one-dark'
 
     # 暗色代码高亮主题
-    darkmode: 
+    darkmode: 'atom-one-dark'
 
   # prismjs 代码高亮
   prismjs: 
 
     # 默认代码高亮主题
-    default: 
+    default: 'prism-tomorrow'
 
     # 暗色代码高亮主题
-    darkmode: 
+    darkmode: 'prism-tomorrow'
 
 
 
@@ -139,8 +141,8 @@ meta:
   
   # 默认文章作者（可在front-matter中覆盖）
   author:
-    name: ChrAlpha
-    url: https://chralpha.com
+    name: ZnS
+    url: https://zns.moe
   
   # 文章创建日期
   date:
@@ -154,32 +156,33 @@ meta:
 
   # 文章缩略图
   thumbnail: 
-    enable: false
+    enable: true
     default:   # 默认缩略图，当页面 `thumbnail` 字段为空时 fallback 至此参数
 
   # 文章过时提醒
   expire: 
-    enable: false
-    duration: 120  # 超过此天数则显示过期提醒
+    enable: true
+    duration: 90  # 超过此天数则显示过期提醒
 
   # 文章自动摘要
   auto_excerpt: 
-    enable: false
+    enable: true
     length: 150
 
   # 文章目录
   toc: 
-    enable: false
+    enable: true
     list_number: false
 
   # 文章版权声明
   copyright: 
-    enable: false
+    enable: true
     
     # 在作者声明和永久链接之后，可以多行，支持 markdown
     custom_text:
       # - ''
       # - ''
+      - '文章默认使用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 协议进行许可，使用时请注意遵守协议。'
 
 
 
@@ -188,7 +191,8 @@ meta:
 # ---------------------------------------------------------------
 
 comments: 
-  use:   # disqus | disqusjs | valine | minivaline | gitalk | gitment | levere | changyan | wildfire
+  use:  
+    disqusjs # disqus | disqusjs | valine | minivaline | gitalk | gitment | levere | changyan | wildfire
 
   # Disqus
   disqus:  
@@ -196,18 +200,18 @@ comments:
 
   # DisqusJS  
   disqusjs: 
-    shortname: 
-    siteName: 
+    shortname: znssuz
+    siteName: "ZnS' Blog"
     api: 
-    apikey: 
-    admin: ''
-    nesting: 2
+    apikey: Jveu5Q9mFlYk4tUfMmypGWPmsCyuFymKCZUQz4yyPFmnEpmayGxBer3snDVxy4Xs
+    admin: 'znssuz'
+    nesting: 
 
   # Valine
   valine: 
-    appId: 
-    appKey:
-    placeholder: 
+    appId: PXzfJiXipinGUpdmemIkI4xI-gzGzoHsz
+    appKey: sRtCBIUfO4OgKueVPlcz4GN6
+    placeholder: '+1S'
     path: 
     avatar: 
     meta: [nick, mail, link]
@@ -307,7 +311,7 @@ comments:
 # ---------------------------------------------------------------
 
 analytics:
-  google_site_id:
+  google_site_id: UA-139175575-1
   gtags_site_id:
   baidu_site_id: 
   cnzz_site_id: 
@@ -328,7 +332,7 @@ footer:
   # 例如：将此设为 `2018`，那么页脚就会显示 '© 2018 - 2020'（2020 为最后一次页面生成时间）
   # 如果将此项留空，则单独显示 '© 2020'（2020 为最后一次页面生成时间）
   # 如果你不想显示任何内容，请将此项设为 `false`
-  copyright_since: 
+  copyright_since: 2019
 
   # 网站计数
   statistics: 
@@ -347,7 +351,7 @@ footer:
       enable: true
       before_text: '' # 展示在数据前的内容，支持 HTML
       after_text: Viewers  # 展示在数据后的内容，支持 HTML
-      divider: '&nbsp;&nbsp;&nbsp;|' # 分隔符，HTML 语法支持
+      divider: '' # 分隔符，HTML 语法支持
     
     # 全站 PV（Page Views）
     site_pv:
@@ -375,7 +379,7 @@ footer:
 
 # 图片懒加载插件
 lazyload:
-  enable: false
+  enable: true
   loadingImage: 
 
 # 站内搜索插件
@@ -385,7 +389,7 @@ search:
   field: All  # Page | Post | All
 
 # note 标签插件
-note: false
+note: true
 
 # fold 内容折叠插件
 fold: 
@@ -399,10 +403,10 @@ fancybox:
   auto: false
   
 # 返回顶部
-back_to_top: false
+back_to_top: true
 
 # 深色模式
-darkmode: false
+darkmode: true
 
 # Mermaid Diagrams
 mermaid: 
