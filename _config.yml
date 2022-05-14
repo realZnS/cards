@@ -202,7 +202,7 @@ comments:
   disqusjs: 
     shortname: znssuz
     siteName: "ZnS' Blog"
-    api: 
+    api: https://disqus.com/api/
     apikey: Jveu5Q9mFlYk4tUfMmypGWPmsCyuFymKCZUQz4yyPFmnEpmayGxBer3snDVxy4Xs
     admin: 'znssuz'
     nesting: 
